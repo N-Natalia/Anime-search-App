@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    font-family:'Fira Sans', sans-serif
+}
+body{
+    background: #272323 ;
+
+    /*
+    background: -moz-linear-gradient(left,rgb(0, 5, 0),#07020734,rgb(7, 7, 7),rgba(0, 0, 0, 0.877));
+    background: -webkit-linear-gradient(left,rgb(10, 80, 10),rgba(247, 0, 255, 0.205),rgb(71, 66, 66),rgba(0, 0, 0, 0.877));
+    background: -ms-linear-gradient(left,rgb(1, 14, 1),rgba(247, 0, 255, 0.205),rgb(14, 13, 13),rgba(0, 0, 0, 0.877));
+    background: -o-linear-gradient(left,rgb(1, 2, 1),rgba(0, 225, 255, 0.205),rgb(10, 10, 10),rgba(0, 0, 0, 0.877));
+    background: linear-gradient(to left,rgb(0, 0, 0),rgba(247, 0, 255, 0.205),rgb(8, 8, 8),rgba(0, 0, 0, 0.877));
+
+    */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header{
+    padding-top:50px;
+    padding-bottom:50px
 }
+header h1{
+    color:#E17F1E ;
+    font-size:58px;
+    font-weight:1000;
+    text-align:center
+
+}
+header h1 strong{
+    color:#E17F1E ;
+    font-weight:1000;
+    
+}
+header h3{
+    text-align: center;
+    color: white;
+
+}
+
+.content-wrap{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex
+}
+
+.content-wrap aside nav{
+    
+    padding-left:16px;
+    padding-right:16px
+}
+
+
+.content-wrap aside nav h3{
+    color:#e97b0d;
+    font-size:24px;
+    margin-bottom:16px
+}
+
+
+.content-wrap aside nav a figure img{  
+
+    width: 240px;/*pendiente  a eliminar*/
+    height:280px;
+}
+
+.content-wrap aside nav a{
+    /*display:block;*/
+    /*padding:5px 5px;*/
+    text-align:center;
+    color:rgb(167, 118, 14);
+    margin-right: auto;
+   
+    margin-bottom:16px;
+    /*background-color:#EEE;*/
+    text-decoration:none;
+    text-align: center;
+    
+
+}
+.content-wrap aside {
+    text-align: center;
+    
+    flex-wrap:wrap;
+    margin-top:1px;
+}
+
+.content-wrap aside nav a h3{
+    
+    text-align: center;
+    
+    flex-wrap:wrap;
+    margin-top:1px;
+}
+
+
+
+
+.content-wrap main{    
+    flex:1 1 0%;
+    padding:0px 16px
+}
+
+.content-wrap main .main-head .search-box{
+    display:flex;      
+    justify-content:center;
+}
+
+/* Color y formato de la caja de busqueda*/
+.content-wrap main .main-head .search-box input{
+        
+    width:100%;
+    max-width:400px;
+    padding:16px;    
+    background-color:#EEE;
+       
+}
+
+.content-wrap main .main-head .search-box input:focus,.content-wrap main .main-head .search-box input:valid{
+    background-color:#313131;
+    color:#FFF
+}
+
+/*pendiente en cambios*/
+.content-wrap main .anime-list{    
+    display:flex;/*acumular cuadros*/    
+    flex-wrap:wrap;
+    margin-top:1px;
+}
+
+.content-wrap main .anime-list .anime-card{
+        
+    flex:1 1 33.333%;/*columnas uniformes */
+    max-width:33.333%;
+    padding:16px 8px
+}
+
+/*Editar subrauado de nombre de anime*/
+.content-wrap main .anime-list .anime-card a{
+    text-decoration:none
+}
+
+.content-wrap main .anime-list .anime-card figure{
+    margin-bottom:16px
+}
+
+
+.content-wrap main .anime-list .anime-card figure img{  
+
+    width:100%;/*pendiente  a eliminar*/
+    height:500px;       
+    
+}
+
+.content-wrap main .anime-list .anime-card a h2{
+    
+    color:#5a66d6e7;
+    text-align: center;
+    
+
+}
+.content-wrap main .anime-list .anime-card a h3{
+    
+    color:#9ce2e7e7;
+
+}
+
+.content-wrap main .anime-list .anime-card a p{
+    
+    color:#e6d4e0e7;
+}
+
+.content-wrap main .anime-list .anime-card:hover figure img{
+    transform:scale(1.05);
+}
+
+
+
+
+
+
+
